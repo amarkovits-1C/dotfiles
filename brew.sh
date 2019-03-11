@@ -39,7 +39,6 @@ brew install wget --with-iri
 brew install gnupg
 
 # Install more recent versions of some macOS tools.
-brew install vim --with-override-system-vi
 brew install grep
 brew install openssh
 brew install screen
@@ -95,6 +94,8 @@ brew install ssh-copy-id
 brew install tree
 brew install vbindiff
 brew install zopfli
+
+brew install kube-ps1
 
 # Remove outdated versions from the cellar.
 brew cleanup
