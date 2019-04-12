@@ -9,13 +9,12 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias dl="cd ~/Downloads"
-alias dt="cd ~/Desktop"
 alias p="cd ~/Projects"
-alias pd="cd ~/Projects/depmon"
-alias pse="cd ~/Projects/seismic_ml"
 alias g="git"
 alias k="kubectl"
+
+# Tillerless helm v2 https://rimusz.net/tillerless-helm/
+alias hhelm='helm tiller run helm'
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -111,6 +110,3 @@ alias reload="exec ${SHELL} -l"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
-
-# Tillerless helm v2 https://rimusz.net/tillerless-helm/
-alias hhelm='helm tiller run helm'
