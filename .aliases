@@ -111,3 +111,6 @@ alias reload="exec ${SHELL} -l"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+# Tillerless helm v2 https://rimusz.net/tillerless-helm/
+alias hhelm='helm tiller run helm'
