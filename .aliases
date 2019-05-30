@@ -14,8 +14,9 @@ alias g="git"
 alias k="kubectl"
 
 # Git shortcuts
+alias gs="git status"
 alias gau="git add -u"
-alias gaa="git add -a"
+alias gaa="git add -A"
 alias gcsm="git commit -s -m"
 
 # Tillerless helm v2 https://rimusz.net/tillerless-helm/
