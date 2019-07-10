@@ -48,6 +48,9 @@ if ! zgen saved; then
   # fish like history search
   zgen load zsh-users/zsh-history-substring-search
 
+  # fish like autosuggestions
+  zgen load zsh-users/zsh-autosuggestions
+
   zgen load romkatv/powerlevel10k powerlevel9k
   zgen save
 fi
