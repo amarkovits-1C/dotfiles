@@ -39,6 +39,9 @@ if ! zgen saved; then
   # Kubernetes context
   zgen oh-my-zsh plugins/kube-ps1
 
+  # test
+  zgen oh-my-zsh plugins/copyfile
+
   # cp completion
   zgen oh-my-zsh plugins/cp
 
@@ -48,12 +51,15 @@ if ! zgen saved; then
   # fish like history search
   zgen load zsh-users/zsh-history-substring-search
 
-  # fish like autosuggestions
+  # fish like autosuggest
   zgen load zsh-users/zsh-autosuggestions
 
   zgen load romkatv/powerlevel10k powerlevel9k
   zgen save
 fi
+
+# https://github.com/zsh-users/zsh/blob/master/Functions/Misc/colors
+typeset -g ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=30"
 
 setopt nocorrectall
 
