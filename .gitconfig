@@ -114,3 +114,6 @@
 [user]
 	name = Alex Markovits
 	email = amarkovits@oneconcern.com
+
+[pager]
+   branch = false
