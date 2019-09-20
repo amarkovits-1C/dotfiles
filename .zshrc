@@ -157,3 +157,5 @@ fi
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 autoload -U +X bashcompinit && bashcompinit
+
+zstyle ':completion:*' menu select
