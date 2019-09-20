@@ -30,7 +30,7 @@ if ! zgen saved; then
   zgen load voronkovich/gitignore.plugin.zsh
 
   # z navigation
-  zgen oh-my-zsh plugins/z
+  zgen load agkozak/zsh-z
 
   # pip completion
   zgen oh-my-zsh plugins/python
