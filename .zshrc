@@ -57,7 +57,7 @@ if ! zgen saved; then
   # fish like autosuggest
   zgen load zsh-users/zsh-autosuggestions
 
-  zgen load romkatv/powerlevel10k powerlevel9k
+  zgen load romkatv/powerlevel10k powerlevel10k
   zgen save
 fi
 
@@ -71,7 +71,7 @@ setopt nocorrectall
 [ -f "$HOME/.fonts/octicons-regular.sh" ] && . "$HOME/.fonts/octicons-regular.sh" 
 [ -f "$HOME/.fonts/pomicons-regular.sh" ] && . "$HOME/.fonts/pomicons-regular.sh" 
 
-COMPLETION_WAITING_DOTS="true"
+# COMPLETION_WAITING_DOTS="true"
 DISABLE_CORRECTION="true"
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets root)
 HIST_STAMPS="mm/dd/yyyy"
@@ -106,7 +106,6 @@ POWERLEVEL9K_VCS_OUTGOING_CHANGES_ICON='\u2191'
 POWERLEVEL9K_VCS_COMMIT_ICON="\uf417"
 POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%F{blue}\u256D\u2500%f"
 POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%F{blue}\u2570\uf460%f "
-POWERLEVEL9K_CUSTOM_KUBE_PS1='kube_ps1'
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir virtualenv custom_kube_ps1 vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time  status)
 
@@ -158,4 +157,7 @@ fi
 
 autoload -U +X bashcompinit && bashcompinit
 
-zstyle ':completion:*' menu select
+# zstyle ':completion:*' menu select
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
