@@ -29,6 +29,9 @@ if ! zgen saved; then
   zgen oh-my-zsh plugins/git
   zgen load voronkovich/gitignore.plugin.zsh
 
+  # z navigation
+  zgen oh-my-zsh plugins/z
+
   # pip completion
   zgen oh-my-zsh plugins/python
   zgen oh-my-zsh plugins/pip
