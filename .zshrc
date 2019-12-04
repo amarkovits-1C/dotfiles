@@ -1,6 +1,7 @@
 #!/bin/zsh
 export PATH=$PATH:/usr/local/bin
 export PATH="$PATH:$(brew --prefix)/bin"
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 export SHELL="${SHELL-/bin/zsh}"
 export OS="${OS-$(uname)}"
 
